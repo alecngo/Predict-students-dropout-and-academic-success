@@ -16,7 +16,6 @@ The dataset I got was almost ready to use. However, to separate each element in 
 
 ## EDA
 I looked at the distributions of the data. Below are a few highlights from the pivot tables. 
-
 ![alt text](https://github.com/ahnngo/Predict-students-dropout-and-academic-success/blob/master/Correlation.png)
 ![alt text](https://github.com/ahnngo/Predict-students-dropout-and-academic-success/blob/master/General%20Explore.png)
 
