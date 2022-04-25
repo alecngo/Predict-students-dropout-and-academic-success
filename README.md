@@ -1,29 +1,29 @@
 # Predict Students' Dropout and Academic Success: Project Overview 
-* Created a tool to help predicting Students' Dropout and Academic Success based on students' features (academic path, demographics, and social-economic factors) with an accuracy of 
-* Utilized Matplotlib and Seaborn effectively to demonstrate the stock prices fluctuations during the timeframe and what dates each bank stock had the best and worst single-day returns
-* Compared the impacts of the COVID pandemic versus the 2007-2009 Great Recession on bank stocks using appropriate plotting and scattering methods
-
+* Created a tool to estimate the risk of dropout and failure based on academic path, demographics, and social-economic factors, with an accuracy of 0.78 (Random Forest), helping to provide more accurate help to students.
+* Deployed Logistic Regression, KNN, Decision Tree, Random Forest, SVM, and GridSearchCV to test the accuracy of each model and compare to find the best performance. 
 
 ## Code and Resources Used 
 **Python Version:** 3.10  
-**Packages:** pandas, numpy, matplotlib, seaborn
-**Scraper Article:** https://www.bankrate.com/banking/biggest-banks-in-america/ and https://finance.yahoo.com/  
 
-## Web Scraping
-Scrape information of 15 banks and their tickers then their stock information from finance.yahoo.com. With each bank, I got the following:
-*	High	
-*	Low	
-*	Open	
-*	Close	
-*	Volume	
-*	Adj Close
+**Packages:** pandas, numpy, matplotlib, seaborn, sklearn
+
+**Dataset:** https://archive-beta.ics.uci.edu/api/static/ml/datasets/697/ 
+
+**Citation:** M.V.Martins, D. Tolledo, J. Machado, L. M.T. Baptista, V.Realinho. (2021) "Early prediction of student’s performance in higher education: a case study" Trends and Applications in Information Systems and Technologies, vol.1, in Advances in Intelligent Systems and Computing series. Springer. DOI: 10.1007/978-3-030-72657-7_16
+
+## Data Cleaning
+The dataset I got was almost ready to use. However, to separate each element in a list, instead of using comma ",", the original dataset uses a semicolon ";", which generated a mistake when I used pandas to read the dataset. Therefore, the only cleaning step I did was to change all ";" to "," by changing extension csv to txt, opening txt file and replacing all ";" to ",".  
 
 ## EDA
-I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights from the pivot tables. 
+I looked at the distributions of the data. Below are a few highlights from the pivot tables. 
 
-![alt text](https://github.com/ahnngo/bank-stocks-affected-by-covid/blob/master/Charts/Banks%20stock%20return.png)
-![alt text](https://github.com/ahnngo/bank-stocks-affected-by-covid/blob/master/Charts/Stock%20Return%20over%20Time.png)
-![alt text](https://github.com/ahnngo/bank-stocks-affected-by-covid/blob/master/Charts/Stock%20price%20fluctuation.png)
-![alt text](https://github.com/ahnngo/bank-stocks-affected-by-covid/blob/master/Charts/Correlation%20of%20Stock%20Prices%20of%20Each%20Bank.png)
-![alt text](https://github.com/ahnngo/bank-stocks-affected-by-covid/blob/master/Charts/aximum%20and%20Minimum%20Change%20in%20Close%20Price%20of%20Stocks%20by%20Time.png)
+![alt text](https://github.com/ahnngo/Predict-students-dropout-and-academic-success/blob/master/Correlation.png)
+![alt text](https://github.com/ahnngo/Predict-students-dropout-and-academic-success/blob/master/General%20Explore.png)
+
+## Choosing Efficient Machine Learning Model
+
+After building Logistic Regression, KNN, Decision Tree, Random Forest, SVM, and GridSearchCV models and testing accuracy, I was able to see that Random Forest perform the best. While choosing the best algorithm, I graphed a chart about Error Rate vs K value in KNN. 
+![alt text](https://github.com/ahnngo/Predict-students-dropout-and-academic-success/blob/master/Error%20Rate%20vs%20K%20value.png)
+
+
 
