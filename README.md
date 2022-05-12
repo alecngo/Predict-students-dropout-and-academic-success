@@ -18,6 +18,7 @@ The dataset I got was almost ready to use. However, to separate each element in 
 ## EDA
 I looked at the distributions of the data. Below are a few highlights from the pivot tables. 
 
+![alt text](https://github.com/ahnngo/Predict-students-dropout-and-academic-success/blob/master/Charts/Correlation_Deep_Learning.png)
 ![alt text](https://github.com/ahnngo/Predict-students-dropout-and-academic-success/blob/master/Charts/Age%20at%20enrollment.png)
 ![alt text](https://github.com/ahnngo/Predict-students-dropout-and-academic-success/blob/master/Charts/dropout_rate.png)
 
@@ -30,4 +31,4 @@ After building Logistic Regression, KNN, Decision Tree, Random Forest, SVM, and 
 ## Improve Accuracy by Practicing Feature Engineering and Deploying Deep Learning
 
 After implementing efficient feature engineer (eliminating outliers and deleting repeating features) and deploying Deep Learning with the support of Dropout and EarlyStopping, I was able to increase the accuracy from 0.72 to 0.92. Below is a chart comparing loss and val_loss:
-![alt text](https://github.com/ahnngo/Predict-students-dropout-and-academic-success/blob/master/Charts/Correlation_Deep_Learning.png)
+![alt text](https://github.com/ahnngo/Predict-students-dropout-and-academic-success/blob/master/Charts/losses.png)
