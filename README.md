@@ -1,7 +1,7 @@
 # Predict Students' Dropout and Academic Success: Project Overview 
 * Created a tool to estimate the risk of dropout and failure based on academic path, demographics, and social-economic factors, helping to provide more accurate help to students by deploying multiple machine learning classification methods and deep learning
 * Increased the accuracy from 0.78 (Random Forest Algorithm) to 0.92 by implementing efficient feature engineer (eliminating outliers and deleting repeating features) and deploying Deep Learning with the support of Dropout and EarlyStopping
-* Generated a Tensorboard visualization tool for evaluating purposes
+* Generated a Tensorboard visualization tool to facilitate the model evaluation process
 
 ## Code and Resources Used 
 **Python Version:** 3.10  
