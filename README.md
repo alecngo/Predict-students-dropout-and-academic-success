@@ -1,6 +1,7 @@
 # Predict Students' Dropout and Academic Success: Project Overview 
-* Created a tool to estimate the risk of dropout and failure based on academic path, demographics, and social-economic factors, with an accuracy of 0.78 (Random Forest), helping to provide more accurate help to students.
-* Deployed Logistic Regression, KNN, Decision Tree, Random Forest, SVM, and GridSearchCV to test the accuracy of each model and compare to find the best performance. 
+* Created a tool to estimate the risk of dropout and failure based on academic path, demographics, and social-economic factors, helping to provide more accurate help to students by deploying multiple machine learning classification methods and deep learning
+* Increased the accuracy from 0.78 (Random Forest Algorithm) to 0.92 by implementing efficient feature engineer (eliminating outliers and deleting repeating features) and deploying Deep Learning with the support of Dropout and EarlyStopping
+* Generated a Tensorboard visualization tool for evaluating purposes
 
 ## Code and Resources Used 
 **Python Version:** 3.10  
@@ -16,13 +17,17 @@ The dataset I got was almost ready to use. However, to separate each element in 
 
 ## EDA
 I looked at the distributions of the data. Below are a few highlights from the pivot tables. 
-![alt text](https://github.com/ahnngo/Predict-students-dropout-and-academic-success/blob/master/Correlation.png)
-![alt text](https://github.com/ahnngo/Predict-students-dropout-and-academic-success/blob/master/General%20Explore.png)
+
+![alt text](https://github.com/ahnngo/Predict-students-dropout-and-academic-success/blob/master/Charts/Age%20at%20enrollment.png)
+![alt text](https://github.com/ahnngo/Predict-students-dropout-and-academic-success/blob/master/Charts/dropout_rate.png)
+
 
 ## Choosing Efficient Machine Learning Model
 
 After building Logistic Regression, KNN, Decision Tree, Random Forest, SVM, and GridSearchCV models and testing accuracy, I was able to see that Random Forest perform the best. While choosing the best algorithm, I graphed a chart about Error Rate vs K value in KNN. 
-![alt text](https://github.com/ahnngo/Predict-students-dropout-and-academic-success/blob/master/Error%20Rate%20vs%20K%20value.png)
+![alt text](https://github.com/ahnngo/Predict-students-dropout-and-academic-success/blob/master/Charts/Error%20Rate%20vs%20K%20value.png)
 
+## Improve Accuracy by Practicing Feature Engineering and Deploying Deep Learning
 
-
+After implementing efficient feature engineer (eliminating outliers and deleting repeating features) and deploying Deep Learning with the support of Dropout and EarlyStopping, I was able to increase the accuracy from 0.72 to 0.92. Below is a chart comparing loss and val_loss:
+![alt text](https://github.com/ahnngo/Predict-students-dropout-and-academic-success/blob/master/Charts/Correlation_Deep_Learning.png)
