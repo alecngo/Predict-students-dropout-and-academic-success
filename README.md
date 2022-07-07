@@ -6,7 +6,7 @@
 ## Code and Resources Used 
 **Python Version:** 3.10  
 
-**Packages:** pandas, numpy, matplotlib, seaborn, sklearn
+**Packages:** pandas, numpy, matplotlib, seaborn, sklearn, tensorflow, keras, tensorboard
 
 **Dataset:** https://archive-beta.ics.uci.edu/api/static/ml/datasets/697/ 
 
